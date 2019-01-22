@@ -30,6 +30,7 @@ Public Class Form1
             lblphone.Text = reader("phone")
             found = False
         End While
+
         If found = True Then
             MessageBox.Show(id.ToUpper & " not found...")
             lbladdress.Text = ""

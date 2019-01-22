@@ -20,6 +20,7 @@ Public Class Form1
         DataGridView1.DataSource = data.Tables("category")
         For i = 0 To data.Tables("category").Rows.Count - 1
             ListBox1.Items.Add(data.Tables("category").Rows(i)("categoryname"))
+            ComboBox1.Items.Add(data.Tables("category").Rows(i)("categoryname"))
         Next
 
         conn.Close()
