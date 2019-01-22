@@ -78,4 +78,10 @@ Public Class Form1
         conn.Close()
 
     End Sub
+
+    'This is function disabled mouse wheel in combobox
+    Private Sub ComboBox1_MouseWheel(sender As Object, e As MouseEventArgs) Handles ComboBox1.MouseWheel, ComboBox2.MouseWheel
+        Dim MouseWheel As HandledMouseEventArgs = DirectCast(e, HandledMouseEventArgs)
+        MouseWheel.Handled = True
+    End Sub
 End Class
